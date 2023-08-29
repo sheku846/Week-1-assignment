@@ -8,7 +8,25 @@
 */
 
 function isAnagram(str1, str2) {
-
+ // var str1 = input("enter the 1st string ")
+ // var str2 = input("enter the 2nd string ")
+ 
+ let n1 = str1.length;
+ 
+ let n2 = str2.length;
+    if(n1 != n2 ){
+        console.log("the string is not Anagram")
+    }
+    str1.sort();
+    str2.sort();
+    for(i=0; i<=n1; i++){
+       if (str1[i]!= str2[i]){
+           console.log("string is not anagram")
+       }
+       else{
+           console.log("string is anagram")
+       }
+    }
 }
+isAnagram(lake,akle)
 
-module.exports = isAnagram;
